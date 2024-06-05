@@ -1,1 +1,1 @@
-# Number-Guessing-Game
+# Number-Guessing-Game within 5 attempts
