@@ -38,17 +38,13 @@ def hint_giving():
 
         for (f,s) in ranges:
             if number > user_input and number % 2 ==0 and number in range(f,s):
-                return (f"the number is above {user_input} and is an 'Even number' and within range {f} to {s}")
+                return (f"the number is above {user_input} and is an 'Even number' and within range {f} to {s-1}")
             elif number > user_input and number % 2 !=0 and number in range(f,s):
-                return (f"the number is above {user_input} and is an 'Odd number' and within range {f} to {s}")
+                return (f"the number is above {user_input} and is an 'Odd number' and within range {f} to {s-1}")
             elif number <= user_input and number % 2 ==0 and number in range(f,s):
-                return (f"the number is below or equal to {user_input} and is an 'Even number' and within range {f} to {s}")
+                return (f"the number is below {user_input} and is an 'Even number' and within range {f} to {s-1}")
             elif number <= user_input and number % 2 !=0 and number in range(f,s):
-                return (f"the number is below or equal to {user_input} and is an 'Odd number' and within range {f} to {s}")
-
-
-
-
+                return (f"the number is below {user_input} and is an 'Odd number' and within range {f} to {s-1}")
 
 
 #guessing loop
@@ -84,7 +80,6 @@ while True:
         continue
     else:
         break
-
 
 
 
